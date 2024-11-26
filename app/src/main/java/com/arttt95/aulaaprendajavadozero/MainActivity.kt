@@ -12,10 +12,21 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.arttt95.aulaaprendajavadozero.ui.theme.AulaAprendaJavaDoZeroTheme
+import com.arttt95.aulaaprendajavadozero.FuncionarioBanco
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        /*val funcionario1 = FuncionarioBanco()
+
+        funcionario1.salario = 1000.00
+
+        val totalComDesconto = funcionario1.calcularSalarioComDesconto()
+
+        println("Total com desconto: " + totalComDesconto)*/
+
+
         enableEdgeToEdge()
         setContent {
             AulaAprendaJavaDoZeroTheme {
@@ -32,6 +43,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+
     Text(
         text = "Hello $name!",
         modifier = modifier
